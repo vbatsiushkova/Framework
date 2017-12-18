@@ -1,0 +1,21 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="TestGroupCalculator">
+    <test name="TestForGroups">
+        <groups>
+            <run>
+                <include name="trigonometry"/>
+                <include name="Non-trigonometry"/>
+            </run>
+        </groups>
+        <classes>
+            <class name="CalculatorTestNG.CalculatorSumLongTest"> </class>
+            <class name="CalculatorTestNG.CalculatorSumDoubleTest"> </class>
+            <class name="CalculatorTestNG.CalculatorCosDoubleTest"/>
+            <class name="CalculatorTestNG.CalculatorSinDoubleTest"/>
+            <class name="CalculatorTestNG.CalculatorDivDoubleTest"/>
+            <class name="CalculatorTestNG.CalculatorDivLongTest"/>
+        </classes>
+    </test>
+
+
+</suite>

@@ -1,0 +1,54 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="calculatorParameters">
+    <test name="CalcSum">
+        <classes>
+            <class name="CalculatorTestNG.CalculatorSumDoubleTest"></class>
+            <parameter name="arg1" value="35.7"/>
+            <parameter name="arg2" value="35.7"/>
+            <parameter name="expected" value="71.4"/>
+        </classes>
+
+    </test>
+    <test name="CalcSum1">
+    <classes>
+        <class name="CalculatorTestNG.CalculatorSumDoubleTest"></class>
+        <parameter name="arg1" value="-90"/>
+        <parameter name="arg2" value="15.7"/>
+        <parameter name="expected" value="-74.3"/>
+    </classes>
+    </test>
+    <test name="CalcSum2">
+        <classes>
+            <class name="CalculatorTestNG.CalculatorSumDoubleTest"></class>
+            <parameter name="arg1" value="-8.9"/>
+            <parameter name="arg2" value="-5.4"/>
+            <parameter name="expected" value="-14.3"/>
+        </classes>
+    </test>
+    <test name="CalcSumLong1">
+        <classes>
+            <class name="CalculatorTestNG.CalculatorSumLongTest"></class>
+            <parameter name="arg1" value="35"/>
+            <parameter name="arg2" value="35"/>
+            <parameter name="expected" value="70"/>
+        </classes>
+
+    </test>
+    <test name="CalcSum1Long">
+        <classes>
+            <class name="CalculatorTestNG.CalculatorSumLongTest"></class>
+            <parameter name="arg1" value="-90"/>
+            <parameter name="arg2" value="15"/>
+            <parameter name="expected" value="-75"/>
+        </classes>
+    </test>
+    <test name="CalcSum2Long">
+        <classes>
+            <class name="CalculatorTestNG.CalculatorSumLongTest"></class>
+            <parameter name="arg1" value="-8"/>
+            <parameter name="arg2" value="-5"/>
+            <parameter name="expected" value="-13"/>
+        </classes>
+    </test>
+</suite>

@@ -1,0 +1,60 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="calculatorParameters" parallel="classes" thread-count="4">
+    <listeners>
+        <listener class-name="CalculatorTestNG.MySuiteListener"></listener>
+    </listeners>
+    <test name="CalcSub">
+        <classes>
+            <class name="CalculatorTestNG.CalculatorSubDoubleTest"></class>
+            <parameter name="arg1" value="35.75"/>
+            <parameter name="arg2" value="15.56"/>
+            <parameter name="expected" value="20.19"/>
+        </classes>
+
+    </test>
+    <test name="CalcSub1">
+    <classes>
+        <class name="CalculatorTestNG.CalculatorSubDoubleTest"></class>
+        <parameter name="arg1" value="-90.0"/>
+        <parameter name="arg2" value="-15.7"/>
+        <parameter name="expected" value="-74.3"/>
+    </classes>
+    </test>
+    <test name="CalcSub2">
+        <classes>
+            <class name="CalculatorTestNG.CalculatorSubDoubleTest"></class>
+            <parameter name="arg1" value="-8.9"/>
+            <parameter name="arg2" value="5.4"/>
+            <parameter name="expected" value="-14.3"/>
+        </classes>
+    </test>
+
+
+
+
+    <test name="CalcSubLong1">
+        <classes>
+            <class name="CalculatorTestNG.CalculatorSubLongTest"></class>
+            <parameter name="arg1" value="35"/>
+            <parameter name="arg2" value="-4"/>
+            <parameter name="expected" value="39"/>
+        </classes>
+    </test>
+    <test name="CalcSub1Long">
+        <classes>
+            <class name="CalculatorTestNG.CalculatorSubLongTest"></class>
+            <parameter name="arg1" value="-90"/>
+            <parameter name="arg2" value="15"/>
+            <parameter name="expected" value="-105"/>
+        </classes>
+    </test>
+    <test name="CalcSub2Long">
+        <classes>
+            <class name="CalculatorTestNG.CalculatorSubLongTest"></class>
+            <parameter name="arg1" value="-8"/>
+            <parameter name="arg2" value="-5"/>
+            <parameter name="expected" value="-3"/>
+        </classes>
+    </test>
+</suite>
